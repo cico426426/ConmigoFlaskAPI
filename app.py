@@ -331,7 +331,7 @@ def getFavorAttractionList():
 @app.route('/getAttractionReviews', methods=["GET"])
 def getAttractionReviews():
     name = request.args.get("name")
-    API = "AIzaSyDPhivwAfyfrDBUWFIT2wt47-QA431Xj_Q"
+    API = ""
     google_places = GooglePlaces(API)
 
     query_result = google_places.text_search(query=name, language=lang.CHINESE_TRADITIONAL)
